@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+@font-face {
+  font-family: 'pp-neue-montreal-mono-3';
+  src: url('/fonts/pp-neue-montreal-mono-3.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* styles/globals.css */
+@font-face {
+  font-family: 'PP-Right-Slab-Light';
+  src: url('/fonts/PP-Right-Slab-Light') format('opentype'),;
+       /* url('/fonts/PP-Right-Slab-Light') format('woff'); */
+  font-weight: bolder;
+  font-style: normal;
+}
+
+/* .font-slab{
+  font-family:'PP-Right-Slab-Light',sans-serif;
+}
+.font-pp{
+  font-family: 'pp-neue-montreal-mono-3';
+  font-weight: bolder;
+}
+.font-abc{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+.bg{
+  max-height: fit-content;
+  /* background-color: #3a0a16;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23f6e8ea' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: #210000; */
+  /* MEOW */
+  /* background-color: #210000;
+  opacity: 1;
+  background-image: radial-gradient(#a60000 1.1px, #210000 1.1px);
+  background-size: 22px 22px; */
+  /* MEOW */
+  /* background-color: #210000;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #210000 22px ), repeating-linear-gradient( #a6000055, #a60000 ); */
+  background-color: #210000;
+  opacity: 1;
+  background-image:  radial-gradient(#a60000 1.05px, transparent 1.05px), radial-gradient(#a60000 1.05px, #210000 1.05px);
+  background-size: 42px 42px;
+  background-position: 0 0,21px 21px;
+}
+
+
+
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+html{
+ scroll-behavior: smooth !important; 
+}
+
+
+.flex2{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ul-cont{
+  width:80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 5vh;
+
+
+}
+.ul-div{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ gap: 5vw;
+ text-decoration: underline;
+
+}
+.thingy{
+  background-color: rgb(32, 2, 2) !important;
+}
+.mod-div{
+  width:40vw;
+}
+
+.ul-div li a{
+  display: inline-block;
+}
+  
+.main1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main1-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-p1{
+  --tw-text-opacity: 1;
+}
+.main-p2{
+  --tw-text-opacity: 1;
+}
+
+.steam-cont{
+  width: 80vw;
+}
+.card-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5vh;
+}
+.card{
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::after, .card::before{   
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image:conic-gradient(from var(--angle),rgb(32, 2, 2),rgb(112, 15, 26));
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 10px;
+  animation: 10s spin linear infinite;
+}
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.25;
+}
+
+.ul-div,.regis-div{
+  width: 40vw;
+}
+.thingy{
+  background-color: rgb(32, 2, 2) !important;
+}
+.bottom-fixed{
+  margin-top:2vh;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.item{
+  /* border: 2px solid yellow; */
+  width: 10vw;
+  height: 20vh;
+}
+
+.carousel{
+  color: white;
+  width: 40vw;
+  height: 10vh;
+  border-radius: 10px;
+}
+.carouselbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.cap3{
+
+  position: relative;
+  top: 100px;
+}
+@keyframes spin{
+  from{
+      --angle: 0deg
+  }
+  to{
+      --angle: 360deg
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .ul-cont{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .flex3{
+  display: flex;
+  flex-direction: column;
+}
+.del{
+  text-align: center;
+}
+.container-nav{
+  gap: 10px;
+}
+.ul-div li a{
+  width: fit-content;
+}
+.main1{
+  margin-top: 0px;
+}
+.main-p1{
+  margin-top: 0px;
+  font-weight: bolder;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+}
+.main-p2{
+  padding-top: 0vh;
+    font-weight: bolder;
+    padding-bottom: 0vh;
+}
+.main1-child{
+  padding-top: 0;
+  padding-bottom: 0vh;
+}
+
+.mod-div{
+  width: fit-content;
+}
+.card,.text-7xl{
+  font-size: 1.5cap;
+}
+.quote{
+  font-size:xx-small;
+}
+.nov p{
+  font-size: x-large;
+}
+.nov2 p{
+  font-size:xx-small;
+}
+.nov{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.day-text{
+  font-size:0.4em;
+}
+.card{
+  width: 65vw;
+ padding: 0; 
+}
+.card-div{
+  padding-bottom: 5vh;
+}
+
+.venue{
+  padding-bottom: 0px;
+}
+.quote{
+  display: none;
+}
+
+.size-small{
+  font-size:80%;
+}
+.size-semismall{
+  font-size: small;
+}
+.size-large{
+  font-size: large;
+}
+.size-mid{
+  font-size: medium;
+}
+.item{
+  width: 30vw;
+}
+
+.car{
+  width: 60vw;
+}
+.cap3{
+  position: relative;
+  top: 80px;
+}
+.time-p{
+  margin-top: 1vh;
+}
+.cap2{
+  font-size: 1.5cap;
+}
+.divider{
+  display: none;
+}
+
+}
+
+
+@layer base {
+  :root {
+    --background:0 0% 100%;
+    --foreground:0 0% 3.9%;
+    --card:0 0% 100%;
+    --card-foreground:0 0% 3.9%;
+    --popover:0 0% 100%;
+    --popover-foreground:0 0% 3.9%;
+    --primary:0 0% 9%;
+    --primary-foreground:0 0% 98%;
+    --secondary:0 0% 96.1%;
+    --secondary-foreground:0 0% 9%;
+    --muted:0 0% 96.1%;
+    --muted-foreground:0 0% 45.1%;
+    --accent:0 0% 96.1%;
+    --accent-foreground:0 0% 9%;
+    --destructive:0 84.2% 60.2%;
+    --destructive-foreground:0 0% 98%;
+    --border:0 0% 89.8%;
+    --input:0 0% 89.8%;
+    --ring:0 0% 3.9%;
+    --chart-1:12 76% 61%;
+    --chart-2:173 58% 39%;
+    --chart-3:197 37% 24%;
+    --chart-4:43 74% 66%;
+    --chart-5:27 87% 67%;
+    --radius:0.5rem;
+  }
+  .dark {
+    --background:0 0% 3.9%;
+    --foreground:0 0% 98%;
+    --card:0 0% 3.9%;
+    --card-foreground:0 0% 98%;
+    --popover:0 0% 3.9%;
+    --popover-foreground:0 0% 98%;
+    --primary:0 0% 98%;
+    --primary-foreground:0 0% 9%;
+    --secondary:0 0% 14.9%;
+    --secondary-foreground:0 0% 98%;
+    --muted:0 0% 14.9%;
+    --muted-foreground:0 0% 63.9%;
+    --accent:0 0% 14.9%;
+    --accent-foreground:0 0% 98%;
+    --destructive:0 62.8% 30.6%;
+    --destructive-foreground:0 0% 98%;
+    --border:0 0% 14.9%;
+    --input:0 0% 14.9%;
+    --ring:0 0% 83.1%;
+    --chart-1:220 70% 50%;
+    --chart-2:160 60% 45%;
+    --chart-3:30 80% 55%;
+    --chart-4:280 65% 60%;
+    --chart-5:340 75% 55%;
+  }
+}
+
+
+
+
+
+

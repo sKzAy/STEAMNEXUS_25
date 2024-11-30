@@ -33,8 +33,8 @@ import {
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]"></TableHead>
-            <TableHead className=" text-red-400 font-pp max-md:pr-2 text-lg">Delegate</TableHead>
-            <TableHead className="text-red-400 font-pp text-lg">Delegation</TableHead>
+            <TableHead className=" text-red-400 font-pp w-fit text-lg font-bold">Delegate</TableHead>
+            <TableHead className="text-red-400 font-pp w-fit text-lg font-bold">Delegation</TableHead>
             
           </TableRow>
         </TableHeader>
@@ -42,8 +42,8 @@ import {
           {invoices.map((invoice) => (
             <TableRow key={invoice.invoice}>
               <TableCell className="  font-bold text-red-400 font-pp max-md:pr-2">{invoice.invoice}</TableCell>
-              <TableCell className="text-white font-pp text-base md:text-lg ">{invoice.paymentStatus}</TableCell>
-              <TableCell className="text-white font-pp text-base md:text-lg ">{invoice.paymentMethod}</TableCell>
+              <TableCell className="text-white font-pp text-base md:text-lg  md:w-[50vw]">{invoice.paymentStatus}</TableCell>
+              <TableCell className="text-white font-pp text-base md:text-lg  md:w-[50vw] ">{invoice.paymentMethod}</TableCell>
               
             </TableRow>
           ))}

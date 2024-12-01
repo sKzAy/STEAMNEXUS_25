@@ -39,9 +39,9 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" className='flex1 nov'><p className={`text-red-500 text-4xl font-pp ${redHat.className}`}>January&nbsp;</p><p className={`${redHat.className} text-red-500 text-4xl font-pp`}>3rd&nbsp;4th&nbsp;5th</p></div>
+      <div data-aos="fade-up" className='flex1 nov'><p className={`text-red-500 text-[1.5em] md:text-4xl font-pp ${redHat.className}`}>January&nbsp;</p><p className={`${redHat.className} text-red-500 md:text-4xl text-[1.5em] font-pp`}>3rd&nbsp;4th&nbsp;5th</p></div>
 
-      <div data-aos="fade-up" className='venue flex1 nov2'><p className={`text-red-500 text-center font-abc ${poppins.className}`}>Venue: Beaconhouse College Programme Potohar Campus</p></div>
+      <div data-aos="fade-up" className='venue flex1 nov2'><p className={`text-red-500 text-center md:text-lg text-[0.6em] font-abc ${poppins.className}`}>Venue: Beaconhouse College Programme Potohar Campus</p></div>
       <div><Card /></div>
     </div>
   </>

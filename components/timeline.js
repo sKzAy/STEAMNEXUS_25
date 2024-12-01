@@ -271,21 +271,20 @@ export function TimelineDemo() {
       content: (
         <div>
           <div data-aos="fade-up" className="md:w[40vw] about-event p-0 text-left flex">
-            <div className="details-div text-white rounded-xl p-0"><p className={`md:w-[40vw] text-base md:text-lg  font-abc ${poppins.className}`}> True education goes beyond memorizing information; it’s about developing
+            <div   className="details-div text-white rounded-xl p-0"><p id="registration1" className={`md:w-[40vw] text-base md:text-lg  font-abc ${poppins.className}`}> True education goes beyond memorizing information; it’s about developing
               the ability to think critically, analyze situations, and solve problems creatively.
               STEAM-Nexus embodies this philosophy by providing students with hands-on, practical experiences in STEM and Arts. This event will help train their
               minds to think critically and independently, equipping them with the skills
               needed to navigate and shape the future, rather than just learning facts by
               rote.</p></div></div>
-          <div id='modules' className='h-0 w-0'></div>
         </div>
       ),
     },
     {
       title:"Registration",
       content: (
-        <div >
-          <div id="registration1"  className="1vh">
+        <div  className="w-0 h-0" >
+          <div>
             
           </div>
         </div>
@@ -344,7 +343,7 @@ export function TimelineDemo() {
       title: "Ambassador",
       content: (
         <div>
-          <div className={`md:mt-24 w-fit md:w-[40vw] flex gap-6 flex-col ${poppins.className}`}>
+          <div id='modules1' className={`md:mt-24 w-fit md:w-[40vw] flex gap-6 flex-col ${poppins.className}`}>
             <p className='text-left text-base md:text-lg font-abc w-[40vw] max-md:w-[70vw] '>As an ambassador, you&apos;ll play a vital role in promoting our event and gathering like-minded individuals. The more delegates you bring, the higher your ambassador level and perks. Ambassadors will be awarded shields at the end of the formal dinner.</p>
             <a className=" w-fit" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSej3sQufW_4bPkR-GC_c1r6knbKqZ94u9_CNBCs6yn-F6mEZA/viewform"><button className=' button  border-red-600 rounded-3xl p-3 text-center font-pp hover:ease-in-out hover:rounded-none  hover:transition-all transition-all hover:bg-red-500 border-2'>Become an Ambassador</button></a>
 
@@ -356,11 +355,11 @@ export function TimelineDemo() {
       title: "Modules",
       content: (
         <div>
-          <div className='h-0 w-1' id='modules1'></div>
+          <div className='h-0 w-1' ></div>
           <div data-aos="zoom-in" className={`${poppins.className} md:pr-16 md:mt-24 pl-0 flex1 text-red-400  text-left md:w-[60vw]`}>
             <div className="carouselbox rounded-xl  ">
             {/* md:h-[35vh] h-[15vh] w-[80vw] md:w-[50vw] */}
-              <div className="carousel flex1 ">
+              <div  className="carousel flex1 ">
                 <Carousel className="w-[60vw] md:w-[40vw] text-center flex2"
                 plugins={[
                   Autoplay({
@@ -415,7 +414,7 @@ export function TimelineDemo() {
                   <CarouselNext variant="secondary" />
                   </div>
                 </Carousel>
-                <div id='registration' className='w-0 h-0'></div>
+                <div  id="schedule" className="w-0 h-0"></div>
               </div>
             </div>
           </div>
@@ -428,7 +427,7 @@ export function TimelineDemo() {
       title: "Schedule",
       title2: "",
       content: (
-        <div id="schedule"></div>
+        <div className="w-0 h-0"></div>
       )
     },
     {

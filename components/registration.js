@@ -13,7 +13,7 @@ const Registration = () => {
         <>
             <div data-aos="zoom-in" className=" flex1 ">
                 <div className=" mod-div text-white rounded-xl border-2 border-red-500 p-10"><h2 className={`
-                 ${robotoMono.className}  text-2xl text-red-400 size-large font-pp`} id='modules '>Registration:</h2>
+                 ${robotoMono.className}  text-2xl text-red-400 size-large font-pp`} >Registration:</h2>
                 <h3 className='text-red-500 pt-4 pb-4 size-semismall font-pp'>Fee:</h3>
                     <TableDemo className="table-div"/>
                     <h3 className='text-red-500 pt-4 pb-4 size-semismall font-pp'>Details:</h3>

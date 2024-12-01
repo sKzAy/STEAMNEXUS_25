@@ -450,8 +450,8 @@ export function TimelineDemo() {
               <TableBody>
                 {invoices.map((invoices) => (
                   <TableRow key={invoices.invoice}>
-                    <TableCell className=" text-white font-pp text-base md:text-lg md:w-[50vw]">{invoices.invoice}</TableCell>
-                    <TableCell className="text-white font-pp text-base md:text-lg  md:w-[50vw] ">{invoices.paymentStatus}</TableCell>
+                    <TableCell className=" text-white font-pp text-sm md:text-lg md:w-[50vw]">{invoices.invoice}</TableCell>
+                    <TableCell className="text-white font-pp text-sm md:text-lg  md:w-[50vw] ">{invoices.paymentStatus}</TableCell>
 
                   </TableRow>
                 ))}
@@ -481,8 +481,8 @@ export function TimelineDemo() {
             <TableBody>
               {invoice2.map((invoice2) => (
                 <TableRow key={invoice2.invoice}>
-                  <TableCell className=" text-white font-pp text-base md:text-lg">{invoice2.invoice}</TableCell>
-                  <TableCell className="text-white  font-pp text-base md:text-lg">{invoice2.paymentStatus}</TableCell>
+                  <TableCell className=" text-white font-pp text-sm md:text-lg">{invoice2.invoice}</TableCell>
+                  <TableCell className="text-white  font-pp text-sm md:text-lg">{invoice2.paymentStatus}</TableCell>
 
                 </TableRow>
               ))}
@@ -512,8 +512,8 @@ export function TimelineDemo() {
               <TableBody>
                 {invoice3.map((invoice3) => (
                   <TableRow key={invoice3.invoice}>
-                    <TableCell className=" text-white  font-pp text-base md:text-lg">{invoice3.invoice}</TableCell>
-                    <TableCell className="text-white  font-pp text-base md:text-lg">{invoice3.paymentStatus}</TableCell>
+                    <TableCell className=" text-white  font-pp text-sm md:text-lg">{invoice3.invoice}</TableCell>
+                    <TableCell className="text-white  font-pp text-sm md:text-lg">{invoice3.paymentStatus}</TableCell>
 
                   </TableRow>
                 ))}

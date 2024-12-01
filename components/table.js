@@ -33,7 +33,7 @@ import {
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]"></TableHead>
-            <TableHead className=" text-red-400 font-pp w-fit text-lg font-bold">Delegate</TableHead>
+            <TableHead className=" text-red-400 font-pp w-fit text-lg font-bold max-md:pr-1">Delegate</TableHead>
             <TableHead className="text-red-400 font-pp w-fit text-lg font-bold">Delegation</TableHead>
             
           </TableRow>

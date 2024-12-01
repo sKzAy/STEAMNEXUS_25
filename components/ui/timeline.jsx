@@ -55,7 +55,7 @@ export const Timeline = ({
                 className={`${redHat.className} hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-red-400  dark:text-neutral-500 font-pp`}>
                 {item.title}
               </h3>
-              <h3 data-aos="fade-down"
+              <h3 
                 className={`${redHat.className} hidden md:block text-lg md:pl-20 md:text-3xl font-bold text-red-400 dark:text-neutral-500 font-pp`}>
                 {item.title2}
               </h3>

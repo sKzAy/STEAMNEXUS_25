@@ -331,6 +331,8 @@ export function TimelineDemo() {
            <ul>
             <li className="font-bold text-red-400 ">Saad Naeem: Head Of Host Team</li>
             <li className="">Number: +92 370 5462197</li>
+            <li className="font-bold text-red-400 ">Abeeha Fatima: Director Registrations</li>
+            <li className="">Number: +92 336 5073944</li>
             <li className="font-bold text-red-400">Abdullah Atif: Director Registrations</li>
             <li className="">Number: +92 319 6005313</li>
            </ul>

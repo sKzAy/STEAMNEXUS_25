@@ -329,12 +329,12 @@ export function TimelineDemo() {
         <div>
           <div className={`${poppins.className} text-base md:text-lg md:mt-24 w-fit md:w-[40vw] flex gap-6 flex-col`}>
            <ul>
-            <li className="font-bold text-red-400 ">Saad Naeem: Head Of Host Team</li>
-            <li className="">Number: +92 370 5462197</li>
-            <li className="font-bold text-red-400 ">Abeeha Fatima: Director Registrations</li>
-            <li className="">Number: +92 336 5073944</li>
-            <li className="font-bold text-red-400">Abdullah Atif: Director Registrations</li>
-            <li className="">Number: +92 319 6005313</li>
+            <li className="font-bold text-red-400  max-md:text-sm">Saad Naeem: Head Of Host Team</li>
+            <li className="max-md:text-sm underline"><a href="tel:+92 370 5462197">Number: +92 370 5462197</a></li>
+            <li className="font-bold text-red-400  max-md:text-sm">Abeeha Fatima: Director Registrations</li>
+            <li className="max-md:text-sm underline"><a href="tel:+92 336 5073944">Number: +92 336 5073944</a></li>
+            <li className="font-bold text-red-400 max-md:text-sm">Abdullah Atif: Director Registrations</li>
+            <li className="max-md:text-sm underline"><a href="tel:+92 319 6005313">Number: +92 319 6005313</a></li>
            </ul>
           </div>
         </div>

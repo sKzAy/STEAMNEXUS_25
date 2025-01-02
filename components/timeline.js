@@ -45,6 +45,7 @@ const invoices = [
     paymentStatus: "3:00-6:00 PM",
  
   },
+
   {
     invoice:"Check-Out",
     paymentStatus: "6:00 PM",
@@ -133,12 +134,6 @@ const invoice2 = [
     invoice: "Business",
 
     paymentStatus: "3:00-4:30 PM ",
-  },
-  {
-
-    invoice: "Bonfire/Qawali",
-
-    paymentStatus: "4:30-6:00 PM",
   },
   {
 
@@ -425,106 +420,106 @@ export function TimelineDemo() {
       ),
     },
  
-    {
-      title: "Schedule",
-      title2: "",
-      content: (
-        <div className="w-0 h-0"></div>
-      )
-    },
-    {
-      title: "",
-      title2: "Day 0",
-      content: (
-        <div className={`${poppins.className} flex justify-center align-middle `}>
-          <div className="day0">
-            <Table>
+    // {
+    //   title: "Schedule",
+    //   title2: "",
+    //   content: (
+    //     <div className="w-0 h-0"></div>
+    //   )
+    // },
+    // {
+    //   title: "",
+    //   title2: "Day 0",
+    //   content: (
+    //     <div className={`${poppins.className} flex justify-center align-middle `}>
+    //       <div className="day0">
+    //         <Table>
 
-              <TableHeader className="">
-                <TableRow>
+    //           <TableHeader className="">
+    //             <TableRow>
                   
-                  <TableHead className=" text-red-400 font-pp max-md:pr-2 w-fit text-lg font-bold">Modules</TableHead>
-                  <TableHead className="text-red-400 font-pp w-fit text-lg font-bold">Time</TableHead>
+    //               <TableHead className=" text-red-400 font-pp max-md:pr-2 w-fit text-lg font-bold">Modules</TableHead>
+    //               <TableHead className="text-red-400 font-pp w-fit text-lg font-bold">Time</TableHead>
 
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {invoices.map((invoices) => (
-                  <TableRow key={invoices.invoice}>
-                    <TableCell className=" text-white font-pp text-sm md:text-lg md:w-[50vw]">{invoices.invoice}</TableCell>
-                    <TableCell className="text-white font-pp text-sm md:text-lg  md:w-[50vw] ">{invoices.paymentStatus}</TableCell>
+    //             </TableRow>
+    //           </TableHeader>
+    //           <TableBody>
+    //             {invoices.map((invoices) => (
+    //               <TableRow key={invoices.invoice}>
+    //                 <TableCell className=" text-white font-pp text-sm md:text-lg md:w-[50vw]">{invoices.invoice}</TableCell>
+    //                 <TableCell className="text-white font-pp text-sm md:text-lg  md:w-[50vw] ">{invoices.paymentStatus}</TableCell>
 
-                  </TableRow>
-                ))}
-              </TableBody>
+    //               </TableRow>
+    //             ))}
+    //           </TableBody>
 
-            </Table>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "",
-      title2: "Day 1",
-      content: (
-        <div className={`md:mt-24 ${poppins.className}`}>
-        <div className="day1">
-          <Table>
+    //         </Table>
+    //       </div>
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   title: "",
+    //   title2: "Day 1",
+    //   content: (
+    //     <div className={`md:mt-24 ${poppins.className}`}>
+    //     <div className="day1">
+    //       <Table>
 
-            <TableHeader>
-              <TableRow>
+    //         <TableHeader>
+    //           <TableRow>
                
-                <TableHead className=" font-bold text-red-400 font-pp text-lg">Modules</TableHead>
-                <TableHead className=" font-bold text-red-400 font-pp text-lg">Time</TableHead>
+    //             <TableHead className=" font-bold text-red-400 font-pp text-lg">Modules</TableHead>
+    //             <TableHead className=" font-bold text-red-400 font-pp text-lg">Time</TableHead>
 
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {invoice2.map((invoice2) => (
-                <TableRow key={invoice2.invoice}>
-                  <TableCell className=" text-white font-pp text-sm md:text-lg">{invoice2.invoice}</TableCell>
-                  <TableCell className="text-white  font-pp text-sm md:text-lg">{invoice2.paymentStatus}</TableCell>
+    //           </TableRow>
+    //         </TableHeader>
+    //         <TableBody>
+    //           {invoice2.map((invoice2) => (
+    //             <TableRow key={invoice2.invoice}>
+    //               <TableCell className=" text-white font-pp text-sm md:text-lg">{invoice2.invoice}</TableCell>
+    //               <TableCell className="text-white  font-pp text-sm md:text-lg">{invoice2.paymentStatus}</TableCell>
 
-                </TableRow>
-              ))}
-            </TableBody>
+    //             </TableRow>
+    //           ))}
+    //         </TableBody>
 
-          </Table>
-        </div>
-      </div>
-      ),
-    },
-    {
-      title: "",
-      title2: "Day 2",
-      content: (
-        <div className={`md:mt-24 ${poppins.className}`}>
-          <div className="day2">
-            <Table>
+    //       </Table>
+    //     </div>
+    //   </div>
+    //   ),
+    // },
+    // {
+    //   title: "",
+    //   title2: "Day 2",
+    //   content: (
+    //     <div className={`md:mt-24 ${poppins.className}`}>
+    //       <div className="day2">
+    //         <Table>
 
-              <TableHeader>
-                <TableRow>
+    //           <TableHeader>
+    //             <TableRow>
                  
-                  <TableHead className=" font-bold text-red-400 font-pp text-lg">Modules</TableHead>
-                  <TableHead className=" font-bold text-red-400 font-pp text-lg">Time</TableHead>
+    //               <TableHead className=" font-bold text-red-400 font-pp text-lg">Modules</TableHead>
+    //               <TableHead className=" font-bold text-red-400 font-pp text-lg">Time</TableHead>
 
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {invoice3.map((invoice3) => (
-                  <TableRow key={invoice3.invoice}>
-                    <TableCell className=" text-white  font-pp text-sm md:text-lg">{invoice3.invoice}</TableCell>
-                    <TableCell className="text-white  font-pp text-sm md:text-lg">{invoice3.paymentStatus}</TableCell>
+    //             </TableRow>
+    //           </TableHeader>
+    //           <TableBody>
+    //             {invoice3.map((invoice3) => (
+    //               <TableRow key={invoice3.invoice}>
+    //                 <TableCell className=" text-white  font-pp text-sm md:text-lg">{invoice3.invoice}</TableCell>
+    //                 <TableCell className="text-white  font-pp text-sm md:text-lg">{invoice3.paymentStatus}</TableCell>
 
-                  </TableRow>
-                ))}
-              </TableBody>
+    //               </TableRow>
+    //             ))}
+    //           </TableBody>
 
-            </Table>
-          </div>
-        </div>
-      ),
-    },
+    //         </Table>
+    //       </div>
+    //     </div>
+    //   ),
+    // },
 
 
 

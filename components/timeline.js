@@ -152,6 +152,12 @@ const invoice2 = [
   },
   {
 
+    invoice: "Qawali",
+
+    paymentStatus: "4:30-6:00 PM",
+  },
+  {
+
     invoice: "Closing",
 
     paymentStatus: "6:00 PM",
